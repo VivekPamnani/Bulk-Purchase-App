@@ -1,0 +1,39 @@
+
+<div className="form-group">
+    <label>User Class</label>
+    <input type="radio" 
+</div>
+
+var resultRows = this.props.data.map(function(result){
+            return (
+                <tbody>
+                     <tr>
+                         <td><input type="radio" name="site_name" 
+                                    value={result.SITE_NAME} 
+                                    checked={this.state.site === result.SITE_NAME} 
+                                    onChange={this.onSiteChanged} />{result.SITE_NAME}</td>
+                         <td><input type="radio" name="address" 
+                                    value={result.ADDRESS}  
+                                    checked={this.state.address === result.ADDRESS} 
+                                    onChange={this.onAddressChanged} />{result.ADDRESS}</td>
+                     </tr>
+                </tbody>
+            );
+        }, this);
+
+<tbody>
+                            <tr>
+                                <td><input type="radio" name="Customer"
+                                           value={this.vendor}
+                                           checked={this.vendor == false}
+                                           onChange={this.onChangeClass}
+                                           />
+                                </td>
+                                <td><input type="radio" name="Vendor"
+                                           value={this.vendor}
+                                           checked={this.vendor == true}
+                                           onChange={this.onChangeClass}
+                                           />
+                                </td>
+                            </tr>
+                        </tbody>
